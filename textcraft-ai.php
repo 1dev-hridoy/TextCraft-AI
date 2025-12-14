@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: TextCraft AI
- * Plugin URI: https://github.com/yourusername/textcraft-ai
- * Description: An AI-powered content studio for WordPress featuring grammar checking, rewriting, and content enhancement tools.
+ * Plugin URI: https://github.com/1dev-hridoy/TextCraft-AI/
+ * Description: An AI-powered content studio for WordPress featuring grammar checking, AI text humanization, and AI detection bypass tools.
  * Version: 1.0.0
  * Author: 1dv-hridoy
  * Author URI: https://github.com/1dev-hridoy
