@@ -2,7 +2,7 @@
 Contributors: 1dev-hridoy
 Tags: ai, grammar, text, content, writing, humanize, detection, bypass
 Requires at least: 5.8
-Tested up to: 6.4
+Tested up to: 6.9
 Stable tag: 1.0.0
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

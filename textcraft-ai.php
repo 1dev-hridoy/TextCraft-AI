@@ -50,8 +50,8 @@ class TextCraft_AI
      */
     public function init()
     {
-        // Load text domain for translations
-        load_plugin_textdomain('textcraft-ai', false, dirname(plugin_basename(__FILE__)) . '/languages');
+     
+        // No need to manually call load_plugin_textdomain() since WordPress 4.6
     }
 }
 
