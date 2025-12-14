@@ -41,6 +41,14 @@ This plugin uses the following API endpoints:
 - PHP 7.2.24 or higher
 - MySQL 5.5.5 or higher
 
+## WordPress Plugin Repository
+
+This plugin is designed to be submitted to the official WordPress Plugin Repository. All files are structured according to WordPress guidelines:
+
+- `readme.txt` - WordPress plugin repository readme file
+- `LICENSE` - GPL v2 license file
+- `assets/` - Contains plugin icons and screenshots
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
