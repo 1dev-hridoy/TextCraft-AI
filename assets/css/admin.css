@@ -1,0 +1,408 @@
+:root {
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+
+    --indigo-50: #eef2ff;
+    --indigo-100: #e0e7ff;
+    --indigo-500: #6366f1;
+    --indigo-600: #4f46e5;
+    --indigo-700: #4338ca;
+
+    --emerald-50: #ecfdf5;
+    --emerald-100: #d1fae5;
+    --emerald-500: #10b981;
+    --emerald-600: #059669;
+
+    --red-50: #fef2f2;
+    --red-500: #ef4444;
+
+ 
+    --tc-bg: var(--slate-50);
+    --tc-card-bg: #ffffff;
+    --tc-border: var(--slate-200);
+    --tc-text-main: var(--slate-800);
+    --tc-text-muted: var(--slate-500);
+    --tc-primary: var(--indigo-600);
+    --tc-primary-hover: var(--indigo-500);
+}
+
+#textcraft-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--tc-text-main);
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.textcraft-header {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.textcraft-header h1 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--slate-900);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.textcraft-badge {
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--indigo-50);
+    color: var(--indigo-700);
+    padding: 2px 10px;
+    border-radius: 9999px;
+    border: 1px solid var(--indigo-100);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.textcraft-header .subtitle {
+    font-size: 16px;
+    color: var(--slate-500);
+    margin-top: 4px;
+}
+
+
+.textcraft-card {
+    background: var(--tc-card-bg);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    border: 1px solid var(--slate-200);
+}
+
+
+
+
+
+.textcraft-studio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 650px;
+    background: white;
+}
+
+@media (max-width: 1024px) {
+    .textcraft-studio {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.textcraft-pane {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.textcraft-left-pane {
+    border-right: 1px solid var(--slate-200);
+    background: var(--slate-50);
+}
+
+.textcraft-pane-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.textcraft-pane-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--slate-800);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#textcraft-container #textcraft-input {
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--slate-300);
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--slate-700);
+    resize: none;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    font-family: inherit;
+    background: white;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+#textcraft-container #textcraft-input:focus {
+    border-color: var(--indigo-500);
+    box-shadow: 0 0 0 4px var(--indigo-100);
+}
+
+#textcraft-container #textcraft-input::placeholder {
+    color: var(--slate-400);
+}
+#textcraft-metabox-container #textcraft-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--slate-300);
+    border-radius: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--slate-700);
+    resize: vertical;
+    outline: none;
+    font-family: inherit;
+    background: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+#textcraft-metabox-container #textcraft-input:focus {
+    border-color: var(--indigo-500);
+    box-shadow: 0 0 0 2px var(--indigo-100);
+}
+
+
+
+
+
+.textcraft-toolbar {
+    margin-top: 24px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.textcraft-btn {
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.textcraft-btn-primary {
+    background-color: var(--indigo-600);
+    color: white;
+}
+
+.textcraft-btn-primary:hover {
+    background-color: var(--indigo-500);
+    box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.3);
+    transform: translateY(-1px);
+}
+
+.textcraft-btn-secondary {
+    background-color: white;
+    border-color: var(--slate-300);
+    color: var(--slate-700);
+}
+
+.textcraft-btn-secondary:hover {
+    background-color: var(--slate-50);
+    border-color: var(--slate-400);
+    color: var(--slate-900);
+}
+
+.textcraft-btn-ghost {
+    background: transparent;
+    color: var(--slate-500);
+    box-shadow: none;
+}
+
+.textcraft-btn-ghost:hover {
+    color: var(--red-500);
+    background: var(--red-50);
+}
+
+.textcraft-right-pane {
+    background: white;
+    position: relative;
+}
+
+#textcraft-results-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+#textcraft-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--slate-500);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.loader-ring {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+}
+
+.loader-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    border: 3px solid var(--indigo-600);
+    border-radius: 50%;
+    animation: loader-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: var(--indigo-600) transparent transparent transparent;
+}
+
+.loader-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.loader-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.loader-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes loader-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.textcraft-result-content h3 {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--slate-400);
+    margin-bottom: 8px;
+    margin-top: 0;
+}
+
+.textcraft-original-text,
+.textcraft-corrected-text {
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.textcraft-original-text {
+    background: var(--slate-50);
+    color: var(--slate-600);
+    border: 1px solid var(--slate-100);
+}
+
+.textcraft-corrected-text {
+    background: #f0fdf4;
+   
+    
+    color: var(--slate-800);
+    border: 1px solid var(--emerald-100);
+    box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.1);
+}
+
+
+
+
+.textcraft-success-message {
+    margin-top: 20px;
+    padding: 16px;
+    background: var(--emerald-50);
+    color: var(--emerald-600);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid var(--emerald-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Errors */
+.textcraft-errors-list {
+    border: 1px solid var(--slate-200);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.textcraft-error-item {
+    padding: 16px 20px;
+    border-bottom: 1px solid var(--slate-100);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    background: white;
+}
+
+.textcraft-error-item:last-child {
+    border-bottom: none;
+}
+
+.textcraft-error-source {
+    color: var(--red-500);
+    background: var(--red-50);
+    padding: 2px 6px;
+    border-radius: 4px;
+    text-decoration: line-through;
+}
+
+.textcraft-error-replacement {
+    color: var(--emerald-600);
+    background: var(--emerald-50);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+}
