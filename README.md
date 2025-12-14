@@ -13,7 +13,7 @@ A powerful WordPress plugin that enhances your content with AI-powered text proc
 ## Installation
 
 1. Download the plugin files
-2. Upload the `FixMyText` folder to your WordPress plugins directory (`/wp-content/plugins/`)
+2. Upload the `TextCraft-AI` folder to your WordPress plugins directory (`/wp-content/plugins/`)
 3. Activate the plugin through the WordPress admin panel
 4. Navigate to the TextCraft AI menu to start using the tools
 
